@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "Prettyjsp" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+  it "should prettify a pure HTML file" do
+    verify_pretty('pure.html')
   end
 end
