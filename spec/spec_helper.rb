@@ -3,8 +3,7 @@ require 'rspec/autorun'
 require 'prettyjsp'
 
 module PrettyJSPHelper
-  def verify_pretty(file)
-    source = File.dirname(__FILE__) + "/fixtures/" + file
+  def verify_pretty(source)
     golden = "#{source}.golden"
 
     pretty = PrettyJSP::Pretty.new.pretty(IO.read(source))
